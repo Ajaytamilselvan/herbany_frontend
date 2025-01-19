@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./ContactForm.css"; // Import the CSS
-import contactAnimation from '../assets/contactAnimation.json';
-import Lottie from "lottie-react";
+// import contactAnimation from '../assets/contactAnimation.json';
+// import Lottie from "lottie-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -27,7 +27,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
-        <Lottie animationData={contactAnimation} className="lottie-animation" />
+        {/* <Lottie animationData={contactAnimation} className="lottie-animation" /> */}
          <h2>Contact Us</h2>
          {status && <p className="status-message">{status}</p>}
          <form className="contact-form" onSubmit={handleSubmit}>
