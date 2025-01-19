@@ -1,0 +1,59 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #145f04;
+    padding: 15px 20px;
+    color: white;
+  }
+  
+  /* Brand Logo */
+  .logo {
+    display: flex;
+    font-size: 34px;
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .nav-links li {
+    display: inline;
+    padding-right: 100px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
+    font-family: cursive;
+  }
+  
+  .nav-links a:hover {
+    color: #f8f9fa;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: #007bff;
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  

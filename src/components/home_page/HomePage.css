@@ -1,0 +1,52 @@
+.background{
+    background-size: cover;
+    height: 86vh;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/Good_Life_lead__face_sheet_masks_749x.webp);
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.left1{
+    height: 400px;
+    width: 45vw;
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    opacity: 0.8;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 30px;
+
+}
+.left1 p{
+    margin: 30px;
+    text-align: justify;
+    font-size: x-large;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.right1{
+    height: 400px;
+    width: 45vw;
+    background-image: url(../assets/Facial\ Sheet.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
