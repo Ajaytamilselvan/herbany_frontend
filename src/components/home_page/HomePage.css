@@ -1,52 +1,77 @@
-.background{
+/* Background styling */
+.background {
     background-size: cover;
     height: 86vh;
-    /* width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
-    
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../assets/Good_Life_lead__face_sheet_masks_749x.webp);
+    padding: 20px;
 }
-.container1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+/* Main container */
+.container1 {
+    display: flex;
+    align-items: stretch; /* Ensures both sections have the same height */
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
 }
-.left1{
-    height: 400px;
-    width: 45vw;
-    /* margin: 20px; */
+
+/* Left section - Text */
+.left1 {
+    flex: 1;
+    min-width: 320px;
+    max-width: 50%;
+    padding: 20px;
+    background-color: aliceblue;
+    opacity: 0.9;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    opacity: 0.8;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    margin-top: 30px;
+    justify-content: center; /* Centers content inside */
+}
 
-}
-.left1 p{
-    margin: 30px;
-    text-align: justify;
-    font-size: x-large;
-    font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
-    
-}
-.right1{
-    height: 400px;
-    width: 45vw;
+/* Right section - Image */
+.right1 {
+    flex: 1;
+    min-width: 320px;
+    max-width: 50%;
     background-image: url(../assets/Facial\ Sheet.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: 30px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left1, .right1 {
+        max-width: 100%;
+        border-radius: 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    .right1 {
+        height: 300px; /* Fixed height for mobile */
+        margin-top: 20px;
+    }
+
+    .left1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .left1 p {
+        font-size: 1rem;
+    }
 }

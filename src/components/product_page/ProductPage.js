@@ -6,7 +6,7 @@ const Product_page = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/products")
+        axios.get("http://192.168.56.1:5000/products")
             .then(response => setProducts(response.data))
             .catch(error => console.error("Error fetching products:", error));
     }, []);
